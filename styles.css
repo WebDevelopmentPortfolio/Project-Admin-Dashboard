@@ -135,9 +135,9 @@ svg.nav-icon {
     grid-row: 1 / 2;
     background-color: #e6e6e6;
     display: grid;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: .75fr 4.25fr;
     grid-template-columns: 1fr;
-    
+    height: 100%;
     
 }
 
@@ -146,12 +146,13 @@ svg.nav-icon {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    /*grid-template-rows: repeat(2, 1fr);*/
+    grid-template-rows: 4.5fr 5.5fr;
     grid-template-columns: 1fr;
     padding-top: 16px;
     padding-left: 20px;
     padding-right: 40px;
-    padding-bottom: 10px;
+    padding-bottom: 4px;
     background-color: white;
     box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.1);
     
@@ -170,9 +171,6 @@ svg.nav-icon {
     align-items: start;
 }
 
-/*.search-area {
-    padding-right: 10px;
-}*/
 
 svg.search-icon {
     width: 16px;
@@ -191,7 +189,7 @@ label,
 input {
     min-width: 0;
     width: 100%;
-    /*box-sizing: border-box;*/
+    
 }
 
 
@@ -209,16 +207,12 @@ input {
 .user-info-section {
     display: grid;
     grid-template-columns: 2fr 2fr 6fr;
-    grid-template-rows: 7fr 3fr;
+    grid-template-rows: 1fr;
     padding-left: 20px;
     justify-items: end;
     
 }
 
-.user-info-section::after {
-    grid-row: 2 / 3;
-    content: "";
-}
 
 
 svg.notif-icon {
@@ -327,7 +321,7 @@ button {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     padding-left: 20px;
-    /*padding-right: 10px;*/
+    
 }
 
 
@@ -351,7 +345,7 @@ button {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 8fr 2fr;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     background-color: white;
     padding: 20px;
     width: 240px;
@@ -453,7 +447,7 @@ button {
     padding-left: 20px;
     padding-right: 40px;
     background-color: white;
-    border-radius: 8px;
+    border-radius: 6px;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
 
 }
